@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>The Scrumptious SLice</title>
+    <style>
+        @font-face {
+            font-family: Gazpacho ;
+            src: url(Gazpacho\ Black.ttf);
+        }
+        body{
+            background-color: #f8d9df;
+            color: #4E3D42;
+        }
+    
+        marquee {
+            font-size: x-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: #FFF2EB;
+                }
+        .col-custom {
+        padding-left: 15px;
+        padding-right: 15px;
+        }
+        hr{
+            background-color: #ff008c;
+        }
+        .container.image {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto; 
+            }
+            .image-wrapper{
+                position: relative;
+                overflow: hidden;
+            }
+            .image-wrapper>img{
+                display: block;
+                width: 100%;
+            }
+            .image-wrapper> .content{
+                position: absolute;
+                inset: 0;
+                background: rgba(255, 2555, 255, .4);
+            }
+            .image-wrapper> image,
+            .image-wrapper> .content{
+                transition: all 0.3s ease;
+            }
+            .image-wrapper:hover>img#zoom{
+                transition: all 0.3s ease;
+                transform: scale(1.1);
+            }
+             .image-wrapper> .content.fade{
+                opacity: 0;
+            }
+            .image-wrapper:hover> .content.fade{
+                opacity: 1;
+            }
+            .about{
+                h2{
+                    font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+                    margin-top: 80px;
+                }
+                p{
+                    font-family: 'Times New Roman' ;
+                    font-size: larger;
+                }
+            }
+            .btn{
+                background-color: #ffc2ff71;
+            }
+            .btn > a{
+                font-family: monospace;
+                text-decoration: none;
+                color: rgb(69, 35, 23);
+            }
+            .btn:hover{
+                background-color: bisque;
+            }
+            .card{
+                font-family: Haettenschweiler;
+                font-size: larger;
+                font-weight: normal;
+            
+            }
+            .bg{
+                background-color: #FDE8E9;
+                width: 90%;
+                height: 100%;
+                border: 25px;
+                margin: auto;
+                padding: 20px;
+            }
+            .carousel{
+                h4{
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: bold;
+                }
+                p{
+                    font-family: Calibri;
+                    font-size: large;
+                }
+                h6{
+                    font-family:'Lucida Sans';
+                    font-weight: bold;
+                    font-size: large;
+                }
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .carousel-control-prev-icon, .carousel-control-next-icon {
+            filter: invert(100%);
+            }
+        
+
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #FFF2EB;">
+      <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" style=" font-family: gazpacho; font-size: x-large;">The Scrumptious Slice</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav col-12 justify-content-end" >
+         <li class="nav-item">
+          <a class="nav-link" href="#" style="font-size:larger; color: rgb(120, 62, 62);">OUR PRODUCTS</a>
+         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" style="font-size:larger; color: rgb(120, 62, 62);">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"style="font-size:larger; color: rgb(120, 62, 62);">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <blockquote></blockquote>
+    
+    <marquee direction="left"  scrollamount="18" loop="infinite" >CAKE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;COOKIES &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;DESSERT-BOX 
+        &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;CUPCAKES &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BROWNIE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CHEESECAKE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEACAKE
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GIFT-PACKS</marquee>
+    <blockquote></blockquote>
+    </div>
+    </div>
+    
+    <div class="container.image">
+    <img  src="images/cakes bg.png" class="img-fluid" alt="Cakes" style="width:100%;">
+    </div>
+    <blockquote></blockquote>
+    <hr  style="width: 30%; height: 5px; margin: auto;" color="solid">
+    <blockquote></blockquote>
+    <div class="about">
+    <h1 class="text-center" style="font-family:'Trebuchet MS'; font-weight: bolder; text-shadow: 5px 5px 10px rgba(89, 88, 88, 0.426);">Why choose us?</h1>
+<div class="row "  style="padding: 20px;">
+    <div class="col-lg-4 col-md-12 col-12 ">
+        <h2>Homemade. Fresh. Delicious.</h2>
+        <p>We bake everything from scratch in our home kitchen using quality ingredients, so each bite tastes just like it should — comforting and real.</p>
+        <h2>Quality in every bite.</h2>
+        <p>No shortcuts, no mixes. just rich flavor, fresh ingredients, and joyful moments baked into every order.</p>
+    </div>
+    <div class="col-lg-4 col-md-12 col-12 text-center">
+    <img src="images/TSS.png" alt="TSS logo" style="width:60%;">
+    </div>
+    <div class="col-lg-4 col-md-12 col-12 ">
+        <h2>Crafted with real love.</h2>
+        <p>Every cake and cookie is made with care, creativity, and a personal touch that big bakeries can’t match.</p>
+        <h2> Locally Baked Goodness</h2>
+        <p>Made right here at home, our treats are fresh, flavorful, and full of love — just like homemade should be.</p>
+    </div>
+</div>
+</div>
+<div class="text-center">
+<button type="button" class="btn btn-secondary btn-lg"><a href="about.html">Know more</a></button>
+</div>
+<blockquote></blockquote>
+<blockquote></blockquote>
+   <div class="container-fluid my-5">
+    <hr  style="width: 30%; height: 5px; margin: auto;" color="solid">
+    <blockquote></blockquote>
+  <h1 class="text-center" style="font-family:'Trebuchet MS'; font-weight: bolder; text-shadow: 5px 5px 10px rgba(89, 88, 88, 0.426);">Our Featured Products</h1>
+  <div class="row gx-7 gy-4 mt-4" > 
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-custom">
+      <div class="card h-100 p-2" style="background-color: rgb(250, 235, 215);">
+        <div class="image-wrapper">
+          <img src="images/Bento.png" class="card-img-top" id="zoom" alt="Bento Cake">
+          <div class="content fade"></div>
+        </div>
+        <div class="card-body text-center">
+          <p class="card-text">Bento Cake</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-custom">
+      <div class="card h-100 p-2" style="background-color: rgb(250, 235, 215);">
+        <div class="image-wrapper">
+          <img src="images/Cookies.png" class="card-img-top" id="zoom" alt="Cookies">
+          <div class="content fade"></div>
+        </div>
+        <div class="card-body text-center">
+          <p class="card-text">Cookies</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-custom">
+      <div class="card h-100 p-2" style="background-color: rgb(250, 235, 215);">
+        <div class="image-wrapper">
+          <img src="images/Mango.png" class="card-img-top" id="zoom" alt="Mango Cake">
+          <div class="content fade"></div>
+        </div>
+        <div class="card-body text-center">
+          <p class="card-text">Mango Cake</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-custom">
+      <div class="card h-100 p-2" style="background-color: rgb(250, 235, 215);">
+        <div class="image-wrapper">
+          <img src="images/Hamper.png" class="card-img-top" id="zoom" alt="Hamper-pack">
+          <div class="content fade"></div>
+        </div>
+        <div class="card-body text-center">
+          <p class="card-text">Hamper-pack</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center">
+<button type="button" class="btn btn-secondary btn-lg"><a href="index.html">View more</a></button>
+</div>
+<blockquote></blockquote>
+<hr  style="width: 30%; height: 5px; margin: auto;" color="solid">
+<blockquote></blockquote>
+<h1 class="text-center" style="font-family:'Trebuchet MS'; font-weight: bolder; text-shadow: 5px 5px 10px rgba(89, 88, 88, 0.426);">Testimonials</h1>
+<blockquote></blockquote>
+<div class="text-center">
+<div class="bg justify-content-center">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="padding: 30px; margin: auto;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h4>A cake that stole the show!</h4>
+      <p>I ordered a chocolate truffle cake for my sister’s birthday, and it was a total hit! The sponge was soft, the frosting was rich, and the decoration was absolutely stunning. You could tell it was made with love and care. Everyone asked me where I got it from — I proudly said The Scrumptious Slice!</p>
+      <h6>~Rachit Shethwala</h6>
+    </div>
+    <div class="carousel-item">
+      <h4>Like cookies straight from childhood memories!</h4>
+      <p>I tried the chunky choco-chip cookies, and wow — they reminded me of the ones my grandma used to make. Soft in the center, crisp on the edges, and packed with gooey chocolate. It’s rare to find something this good AND homemade. 10/10!</p>
+      <h6>~Saloni Chachan</h6>
+    </div>
+    <div class="carousel-item">
+      <h4>Real flavors, real love.</h4>
+      <p>You can feel the difference in every bite — no preservatives, no shortcuts. Just fresh, flavorful, comforting desserts that taste like they came from someone who loves baking. The teacakes and brownies are now a weekly ritual for me.</p>
+      <h6>~Dhvani Gondaliya</h6>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+<blockquote></blockquote>
+<div class="row" style="background-color: rgb(249, 238, 238); padding-top: 50px; padding-bottom: 100px;">
+    <div class="col-12 col-sm-6 col-lg-6">
+        <blockquote></blockquote>
+        <h3 class="text-center" style="font-family: gazpacho;">The Scrumptious Slice</h3>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3" style="margin-left:100px;" >
+        <p>+91 9426629996</p>
+        <p>contact@scrumptious.com</p>
+        <img src="images/Instagram Brands Icon.svg" alt="instgram" width="20px"> <a href="https://www.instagram.com/the.scrumptious.slice/">Follow us more</a>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-6">
+    </div>
+</div>
+
+<p class="text-center" style="color: rgba(0, 0, 0, 0.374);">Developed by Rachit Shethwala</p>
+    
+</body>
+</html>
